@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+html,body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(257, 40%, 49%) ;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+background-image: url(images/bg-desktop.svg);
+background-size: cover ;
+background-repeat: no-repeat;
+
+}
+.main{
+width: 95%;
+
+display: flex;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.main-icon{
+width: 50%;
+}
+.write{
+    width: 50%;
+    height: 100%;
+    padding: 0 50px 0 30px;
+    color: white;
+    margin-top: 50px;
+}
+.main-icon img{
+width: 100%;
+margin-top: 70px;
+}
+h1{
+    font-size: 45px;
+    text-transform: capitalize;
+}
+p{
+   
+    color: rgba(255, 255, 255, 0.763);
+}
+button{
+    padding: 12px 50px;
+    border-radius: 30px;
+color: hsl(257, 40%, 49%);
+
+}
+.icon{
+    margin-left: 2%;
+}
+ul{
+    list-style: none;
+ display: flex;
+ position: absolute;
+ right: 75px;
+ bottom: 25px;
+}
+a{
+    color: white;
+    border: 1px solid white;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+li{
+    margin-right: 10px;
+}
+button:hover{
+    background-color:hsl(300, 69%, 71%) ;
+    color: white;
+    cursor: pointer;
+}
+a:hover{
+   border-color:hsl(300, 73%, 36%) ;
+   color: hsl(300, 73%, 36%);
+}
+@media screen and (max-width:800px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.main{
+    display: flex;
+flex-direction: column;
+align-items: center;
+width: 90%;
+margin-top: 100px;
+}
+.write{
+width: 90%;
+text-align: center;
+}
+.main-icon{
+width: 90%;
+}
+.main-icon img{
+  width: 100%; 
+}
+ul{
+position: initial;
+margin-top: 850px;
+margin-bottom: 60px;
+}
+.ul{
+  display: flex;
+  justify-content: center;
+}
+body{
+    background-image: url(images/bg-mobile.svg);
+ 
+}
+h1{
+    font-size: 30px;
+}
+p{
+    padding: 31px;
+}
+button{
+    padding: 12px 90px;
+}
+.icon{
+    margin-left: 40px;
+}
+}
